@@ -81,6 +81,15 @@ For example if you KeyCloak url is: https://sso-keyauth.apps-crc.testing. Then s
 
 Then, you will see a new tab “Credentials” appear after clicking save on the client protocol of confidential. Select the tab, and take note of the generated secret. 
 
+##### Optional
+
+You can setup the Backchannel Logout so that you can have logout of the session:
+
+I used this link for my demo:
+
+https://flask-keyauth.apps.ocp4.jimbarlow.com/oauth2/logout?rd=https://sso-keyauth.apps.ocp4.jimbarlow.com/realms/master/protocol/openid-connect/logout
+
+![SSO Logout URL](images/logout.png?raw=true "SSO Logout URL")
 
 #### Configure the mappers
 Applying a Group Mapper is optional, but it does allow us to pass the group memberships of our users through to our microservice as “X-Forwarded-Groups” which is useful for informing authorisation functions within the microservice. 
