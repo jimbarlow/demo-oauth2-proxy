@@ -22,7 +22,6 @@ echo "set oauth2ContainerUrl ${oauth2ContainerUrl}"
 export SSOBaseURL="https://sso-${PROJECT}.${appsUrl}"
 echo "SSOBaseURL = ${SSOBaseURL}"
 export AppBaseURL="https://flask-${PROJECT}.${appsUrl}"
-export AppBaseURL="https://flask-${PROJECT}.${appsUrl}"
 
 echo "setting ssoPubKey"
 export ssoPubKey=`curl -k -s ${SSOBaseURL}/realms/master | jq -r '.public_key'`

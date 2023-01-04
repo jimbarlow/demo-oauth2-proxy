@@ -68,6 +68,8 @@ Log in to the KeyCloak with the username: admin and password: oauth2-demo. Once 
 
 ![SSO Client](images/01_create_client.png?raw=true "SSO Create Client")
 
+Click on save at this point.
+
 After you have created the client, you will have the option to switch the client access type from public to confidential, as shown in the figure below.
 
 
@@ -79,11 +81,13 @@ For example if you KeyCloak url is: https://sso-keyauth.apps-crc.testing. Then s
 
 ![SSO Callback URL](images/03_callback_url.png?raw=true "SSO Callback URL")
 
+Now click on the "SAVE" button in order to create the client.
+
 Then, you will see a new tab “Credentials” appear after clicking save on the client protocol of confidential. Select the tab, and take note of the generated secret. 
 
-##### Optional
+### Optional:
 
-You can setup the Backchannel Logout so that you can have logout of the session:
+You can setup the Backchannel Logout so that you can have logout from the session:
 
 I used this link for my demo:
 
