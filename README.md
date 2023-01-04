@@ -70,18 +70,22 @@ Log in to the KeyCloak with the username: admin and password: oauth2-demo. Once 
 
 After you have created the client, you will have the option to switch the client access type from public to confidential, as shown in the figure below.
 
+
 ![SSO Access Type](images/02_confidential.png?raw=true "SSO Acecss Type")
 
-You will see a new tab “Credentials” appear after clicking save on the client protocol of confidential. Select the tab, and take note of the generated secret. 
-
-Finally you need to set a valid callback url - this will be similar to the KeyCloak url, but instead of the prefix sso it will have flask:
+Next, you need to set a valid callback url - this will be similar to the KeyCloak url, but instead of the prefix sso it will have flask:
 
 For example if you KeyCloak url is: https://sso-keyauth.apps-crc.testing. Then set the Valid Redirect URIs to be https://flask-keyauth.apps-crc.testing/oauth2/callback as shown in the figure below:
 
 ![SSO Callback URL](images/03_callback_url.png?raw=true "SSO Callback URL")
 
+Then, you will see a new tab “Credentials” appear after clicking save on the client protocol of confidential. Select the tab, and take note of the generated secret. 
+
+
 #### Configure the mappers
 Applying a Group Mapper is optional, but it does allow us to pass the group memberships of our users through to our microservice as “X-Forwarded-Groups” which is useful for informing authorisation functions within the microservice. 
+
+
 
 ##### Select the Mappers tab and add Group and Audience mapper:
 

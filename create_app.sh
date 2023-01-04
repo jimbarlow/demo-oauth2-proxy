@@ -20,6 +20,8 @@ echo "setting oauth2ContainerUrl"
 export oauth2ContainerUrl="quay.io/oauth2-proxy/oauth2-proxy:latest"
 echo "set oauth2ContainerUrl ${oauth2ContainerUrl}"
 export SSOBaseURL="https://sso-${PROJECT}.${appsUrl}"
+echo "SSOBaseURL = ${SSOBaseURL}"
+export AppBaseURL="https://flask-${PROJECT}.${appsUrl}"
 export AppBaseURL="https://flask-${PROJECT}.${appsUrl}"
 
 echo "setting ssoPubKey"

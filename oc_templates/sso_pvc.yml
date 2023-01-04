@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  annotations:
+  finalizers:
+  - kubernetes.io/pvc-protection
+  labels: {}
+  name: sso-persistent
+  namespace: keyauth
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 2Gi
