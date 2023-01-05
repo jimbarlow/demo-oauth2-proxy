@@ -18,15 +18,16 @@ spec:
    spec:
      containers:
        - name: flask
-         # image: quay.io/snowjet/flask-sso-gatekeeper@sha256:44b52c5ed977710bb33e4c56b90dec85f0814b613581a3cad9b69bd1fe2766a0
-         image: quay.io/jimbarlow/nginx:choa
+         image: quay.io/snowjet/flask-sso-gatekeeper@sha256:44b52c5ed977710bb33e4c56b90dec85f0814b613581a3cad9b69bd1fe2766a0
+         # image: quay.io/jimbarlow/nginx:choa
          ports:
            - containerPort: 8080
              protocol: TCP
          envFrom:
            - configMapRef:
                name: sso-public-key
-         imagePullPolicy: IfNotPresent
+         # imagePullPolicy: IfNotPresent
+         imagePullPolicy: Always
        - name: oauth2
          image: ${oauth2ContainerUrl}
          args:

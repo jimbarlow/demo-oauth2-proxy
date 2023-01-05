@@ -110,6 +110,7 @@ Remember to unselect the Full group path option as shown in the diagram below:
 
 ![SSO Group Mapper](images/04_groups_mapper.png?raw=true "SSO Group Mapper")
 
+![SSO Group Mapper](images/05_groups_mapper.png?raw=true "SSO Group Mapper")
 
 ##### Configure the user groups
 Now select Groups from the left-hand menu and add two groups:
@@ -118,6 +119,11 @@ Now select Groups from the left-hand menu and add two groups:
 
 #### Configure the user
 Again from the left-hand menu, select Users and add a user. Be sure to enter an email and set a password for the user, then add the user to the basic_user and admin groups that you just created. Next, we’ll configure Ouath2 Proxy and the example application.
+
+![SSO Group Mapper](images/user_creation_104.png?raw=true "SSO Group Mapper")
+
+![SSO Group Mapper](images/user_password.png?raw=true "SSO Group Mapper")
+
 
 ## Deploy the application
 ```
